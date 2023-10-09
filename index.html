@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil dan CV Saya</title>
+    <!-- Tambahkan link ke file CSS Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Tambahkan CSS khusus untuk tampilan responsif dan corak grayscale */
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0 10%; /* Mengurangi lebar kontainer menjadi sekitar 80% */
+            background-color: #f0f0f0; /* Warna latar belakang */
+            color: #333; /* Warna teks */
+        }
+        .bg-blue-500 {
+            background-color: #333; /* Warna latar belakang Navbar */
+        }
+        .bg-blue-100 {
+            background-color: #ddd; /* Warna latar belakang Header */
+        }
+        .bg-blue-200 {
+            background-color: #ccc; /* Warna latar belakang CV */
+        }
+        .bg-white {
+            background-color: #fff; /* Warna latar belakang konten putih */
+        }
+        .text-white {
+            color: #fff; /* Warna teks putih */
+        }
+        /* About Me */
+        section.py-8 {
+            padding-left: 1rem;
+        }
+
+        /* Konten Pengalaman Kerja */
+        section.py-12 {
+            padding-left: 1rem;
+        }
+
+        /* Konten Education */
+        section.bg-blue-200.py-12 {
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4 text-white">
+        <div class="container mx-auto">
+            <a href="#" class="text-2xl font-bold">Curriculum Vitae</a>
+            <!-- Tambahkan tautan GitHub dan LinkedIn Anda di sini -->
+            <div class="mt-2">
+                <a href="https://github.com/hazekezia" class="mr-4">GitHub</a>
+                <a href="https://www.linkedin.com/in/jonathan-sitohang/">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-100 p-8">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-center">
+                <!-- Tambahkan foto profil Anda di sini -->
+                <img src="img/circle.png" alt="Foto Profil Anda" class="w-24 h-24 rounded-full mr-4">
+                <div>
+                    <h1 class="text-4xl font-bold">Jonathan Jeremia Valentino Vici Sitohang</h1>
+                    <p class="text-lg">IT Service Support Specialist | Python Programmer | Problem Solver</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section class="py-8">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">About</h2>
+            <p>
+                I am an experienced IT Service Support Specialist with a demonstrated history of success in monitoring and analyzing complex systems. My proficiency lies in swiftly identifying and resolving technical issues, coupled with the ability to create detailed tickets that streamline the problem-solving process. Leveraging a robust background in Python programming, I bring a unique blend of technical expertise and effective communication skills to ensure seamless operations. My commitment to delivering exceptional support reflects my dedication to maintaining optimal functionality in IT environments.
+            </p>
+            <br>
+            <p>
+                Beyond my technical skills, I am passionate about making a positive impact on society. I actively contribute to this goal by combining my technical prowess with a keen social concern. I believe in continuous learning and growth, always seeking opportunities to enhance my professional skills. This proactive approach allows me to stay abreast of emerging technologies and industry best practices, ensuring that I remain a valuable asset in the ever-evolving field of IT service support.
+            </p>
+        </div>
+    </section>
+
+    <!-- Konten Pengalaman Kerja -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Experience</h2>
+            <!-- Tambahkan daftar pengalaman kerja Anda di sini -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow flex">
+                    <img src="Samsung.jpg" alt="Logo Perusahaan 1" class="w-20 h-20 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">Samsung R&D Indonesia</h3>
+                        <p>Role: IT Service Operations</p>
+                        <p>Years of Service: May 2022 - Now</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded shadow flex">
+                    <img src="PTBA.jpg" alt="Logo Perusahaan 2" class="w-20 h-20 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">PT Bukit Asam Tbk</h3>
+                        <p>Role: Internship</p>
+                        <p>Years of Service: Dec 2020 - Jan 2021</p>
+                    </div>
+                </div>
+                <!-- Tambahkan pengalaman kerja lainnya di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Konten Education -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Pendidikan</h2>
+            <!-- Tambahkan daftar pendidikan Anda di sini -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow flex">
+                    <img src="UNSRI.jpg" alt="Logo Perusahaan 2" class="w-20 h-20 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">Sriwijaya University</h3>
+                        <p>Major: Sistem Komputer</p>
+                        <p>Title: Bachelor of Computer Science</p>
+                        <p>Year: 2018 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Konten CV -->
+    <section class="bg-blue-200 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">CV</h2>
+            <!-- Tambahkan informasi CV Anda di sini -->
+            <p>Nama: [Nama Anda]</p>
+            <p>Pendidikan: [Pendidikan Anda]</p>
+            <p>Pengalaman Kerja: [Pengalaman Anda]</p>
+            <!-- Tambahkan detail CV Anda sesuai kebutuhan -->
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 p-4 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 [Nama Anda].</p>
+        </div>
+    </footer>
+</body>
+</html>
