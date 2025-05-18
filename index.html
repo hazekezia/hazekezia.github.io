@@ -3,145 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae | Jonathan Jeremia Valentino VS</title>
-    <!-- Tambahkan link ke file CSS Tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Jonathan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Tambahkan CSS khusus untuk tampilan responsif dan corak grayscale */
-        @media screen and (max-width: 768px) {
-            .container {
-                max-width: 100%;
-                padding: 0 20px;
-            }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #00f0ff;
+            --secondary: #7928ca;
         }
+        
         body {
-            font-family: Arial, sans-serif;
-            padding: 0 10%; /* Mengurangi lebar kontainer menjadi sekitar 80% */
-            background-color: #f0f0f0; /* Warna latar belakang */
-            color: #333; /* Warna teks */
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f1f1f1;
+            overflow-x: hidden;
         }
-        .bg-blue-500 {
-            background-color: #333; /* Warna latar belakang Navbar */
+        
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
-        .bg-blue-100 {
-            background-color: #ddd; /* Warna latar belakang Header */
+        
+        .link-card {
+            transition: all 0.3s ease;
+            background: rgba(15, 15, 15, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .bg-blue-200 {
-            background-color: #ccc; /* Warna latar belakang CV */
+        
+        .link-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(0, 240, 255, 0.3);
         }
-        .bg-white {
-            background-color: #fff; /* Warna latar belakang konten putih */
-        }
-        .text-white {
-            color: #fff; /* Warna teks putih */
-        }
-        /* About Me */
-        section.py-8 {
-            padding-left: 1rem;
-        }
-
-        /* Konten Pengalaman Kerja */
-        section.py-12 {
-            padding-left: 1rem;
-        }
-
-        /* Konten Education */
-        section.bg-blue-200.py-12 {
-            padding-left: 1rem;
+        
+        .noise::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            z-index: -1;
         }
     </style>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto">
-            <a href="#" class="text-2xl font-bold">Curriculum Vitae</a>
-            <!-- Tambahkan tautan GitHub dan LinkedIn Anda di sini -->
-            <div class="mt-2">
-                <a href="https://github.com/hazekezia" class="mr-4">GitHub</a>
-                <a href="https://www.linkedin.com/in/jonathan-sitohang/">LinkedIn</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="bg-blue-100 p-8">
-        <div class="container mx-auto">
-            <div class="flex items-center justify-center">
-                <!-- Tambahkan foto profil Anda di sini -->
-                <img src="img/circle.png" alt="Foto Profil Anda" class="w-24 h-24 rounded-full mr-4">
-                <div>
-                    <h1 class="text-4xl font-bold">Jonathan Jeremia Valentino Vici Sitohang</h1>
-                    <p class="text-lg">IT Service Support Specialist | Python Programmer | Problem Solver</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Me -->
-    <section class="py-8">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">About</h2>
-            <p>
-                I am an experienced IT Service Support Specialist with a demonstrated history of success in monitoring and analyzing complex systems. My proficiency lies in swiftly identifying and resolving technical issues, coupled with the ability to create detailed tickets that streamline the problem-solving process. Leveraging a robust background in Python programming, I bring a unique blend of technical expertise and effective communication skills to ensure seamless operations. My commitment to delivering exceptional support reflects my dedication to maintaining optimal functionality in IT environments.
+<body class="min-h-screen noise">
+    <div class="container mx-auto px-4 py-12 md:py-24 flex flex-col items-center justify-center min-h-screen">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Hi, my name is <span class="gradient-text">Jonathan</span>
+            </h1>
+            
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                Code. Automate. Optimize. | AI & Automation | Ex-SRIN IT Ops
             </p>
-            <br>
-            <p>
-                Beyond my technical skills, I am passionate about making a positive impact on society. I actively contribute to this goal by combining my technical prowess with a keen social concern. I believe in continuous learning and growth, always seeking opportunities to enhance my professional skills. This proactive approach allows me to stay abreast of emerging technologies and industry best practices, ensuring that I remain a valuable asset in the ever-evolving field of IT service support.
-            </p>
-        </div>
-    </section>
-
-    <!-- Konten Pengalaman Kerja -->
-    <section class="py-12">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Experience</h2>
-            <!-- Tambahkan daftar pengalaman kerja Anda di sini -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded shadow flex">
-                    <img src="img/Samsung.jpg" alt="Logo Perusahaan 1" class="w-20 h-20 rounded-full mr-4">
-                    <div>
-                        <h3 class="text-xl font-semibold">Samsung R&D Indonesia</h3>
-                        <p>Role: IT Service Operations</p>
-                        <p>Years of Service: May 2022 - Now</p>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded shadow flex">
-                    <img src="img/PTBA.jpg" alt="Logo Perusahaan 2" class="w-20 h-20 rounded-full mr-4">
-                    <div>
-                        <h3 class="text-xl font-semibold">PT Bukit Asam Tbk</h3>
-                        <p>Role: Internship</p>
-                        <p>Years of Service: Dec 2020 - Jan 2021</p>
-                    </div>
-                </div>
-                <!-- Tambahkan pengalaman kerja lainnya di sini -->
+            
+            <div class="mt-8">
+                <div class="inline-block h-1 w-16 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600"></div>
             </div>
         </div>
-    </section>
-
-    <!-- Konten Education -->
-    <section class="py-12">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Pendidikan</h2>
-            <!-- Tambahkan daftar pendidikan Anda di sini -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded shadow flex">
-                    <img src="img/UNSRI.jpg" alt="Logo Perusahaan 2" class="w-20 h-20 rounded-full mr-4">
-                    <div>
-                        <h3 class="text-xl font-semibold">Sriwijaya University</h3>
-                        <p>Major: Sistem Komputer</p>
-                        <p>Title: Bachelor of Computer Science</p>
-                        <p>Year: 2018 - 2022</p>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full max-w-3xl">
+            <a href="https://www.linkedin.com/in/jonathan-sitohang/" target="_blank" class="link-card rounded-lg p-4 flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <i class="fab fa-linkedin-in text-gray-300"></i>
                 </div>
+                <span class="text-gray-300">LinkedIn</span>
+            </a>
+            
+            <a href="https://github.com/hazekezia" target="_blank" class="link-card rounded-lg p-4 flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <i class="fab fa-github text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">GitHub</span>
+            </a>
+            
+            <a href="https://book.haze.my.id/" target="_blank" class="link-card rounded-lg p-4 flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <i class="fas fa-blog text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">Blog</span>
+            </a>
+
+            <a href="https://hazekezia.github.io/cv.pdf" target="_blank" class="link-card rounded-lg p-4 flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                    <i class="fas fa-file-alt text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">CV/Resume</span>
+            </a>
+        </div>
+        
+        <!-- Additional links can be added by copying one of the above blocks -->
+        <!-- Example for adding Twitter:
+        <a href="#twitter-url" target="_blank" class="link-card rounded-lg p-4 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
+                <i class="fab fa-twitter text-gray-300"></i>
             </div>
+            <span class="text-gray-300">Twitter</span>
+        </a>
+        -->
+        
+        <div class="mt-16 text-center">
+            <p class="text-gray-600 text-sm">© <span id="current-year">2025</span> Jonathan. All rights reserved.</p>
         </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2023 Jonathan Sitohang</p>
-        </div>
-    </footer>
+    </div>
+    
+    <script>
+        // Automatically update year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Simple animation for cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.link-card');
+            
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(10px)';
+                card.style.transition = `all 0.4s ease ${index * 0.1}s`;
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
 </body>
 </html>
